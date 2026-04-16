@@ -1,0 +1,59 @@
+{
+  "name": "@xqcxx/stacks-analytics-tracker-sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for interacting with the analytics-tracker Clarity contract on Stacks.",
+  "license": "MIT",
+  "author": "xqcxx <praisechinonso21@gmail.com>",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "clean": "rm -rf dist",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "build": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run clean && npm run typecheck && npm run build"
+  },
+  "keywords": [
+    "stacks",
+    "clarity",
+    "analytics",
+    "smart-contract",
+    "typescript",
+    "sdk"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xqcxx/stacks-analytics-tracker-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xqcxx/stacks-analytics-tracker-sdk/issues"
+  },
+  "homepage": "https://github.com/xqcxx/stacks-analytics-tracker-sdk#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@stacks/network": "^7.3.1",
+    "@stacks/transactions": "^7.3.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}

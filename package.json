@@ -1,5 +1,5 @@
 {
-  "name": "analytics-sdk-xqcxx",
+  "name": "@rednevsky/analytics-sdk-xqcxx",
   "version": "0.1.0",
   "description": "TypeScript SDK for interacting with the analytics-tracker Clarity contract on Stacks.",
   "license": "MIT",

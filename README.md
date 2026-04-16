@@ -1,11 +1,11 @@
-# analytics-sdk-xqcxx
+# @rednevsky/analytics-sdk-xqcxx
 
 TypeScript SDK for interacting with the `analytics-tracker` Clarity contract on Stacks.
 
 ## Install
 
 ```bash
-npm install analytics-sdk-xqcxx
+npm install @rednevsky/analytics-sdk-xqcxx
 ```
 
 ## Features
@@ -22,7 +22,7 @@ import {
   buildTrackPageViewTx,
   broadcastAnalyticsTx,
   getContractInfo,
-} from "analytics-sdk-xqcxx";
+} from "@rednevsky/analytics-sdk-xqcxx";
 
 const network = "https://api.mainnet.hiro.so";
 
